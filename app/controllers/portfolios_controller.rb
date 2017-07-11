@@ -56,5 +56,12 @@ class PortfoliosController < ApplicationController
       format.html { redirect_to portfolios_url, notice: 'Record was removed.' }
     end
   end
+  
+  def portfolio_params
+    params.require(:portfolio).permit(:title,
+                                      :subtitle,
+                                      :body,
+                                      technologies_attributes: [:name])
+  end
 
 end
