@@ -10,13 +10,14 @@ module ApplicationHelper
   end
 end
 
-def sample_method
-  x = 1
-  
-  if x == 2
-      "X is equal to 1"
-  else
-      "England is my city"
-    end
+def source_helper(layout_name)
+  if session[:source]
+    greeting = "Thanks for visiting me from #{session[:source]}"
+    content_tag(:p, greeting, class: "source-greeting")
   end
+end
+
+
+
+
   
