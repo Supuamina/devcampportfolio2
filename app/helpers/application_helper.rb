@@ -19,5 +19,5 @@ def source_helper(layout_name)
 end
 
 def copyright_generator
-  AbdiViewTool::Renderer.copyright 'Luqman Abdi', 'All rights reserved'
+  AbdiViewTool::Renderer.copyright 'Luqman Abdi |', 'All rights reserved'
 end
