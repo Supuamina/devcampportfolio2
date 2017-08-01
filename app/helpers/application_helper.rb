@@ -17,6 +17,6 @@ module ApplicationHelper
   end
   
   def copyright_generator
-    AbdiViewTool::Renderer.copyright 'Luqman Abdi |', 'All rights reserved'
+    AbdiViewTool::Renderer.copyright '| Luqman Abdi |', 'All rights reserved'
   end
 end
