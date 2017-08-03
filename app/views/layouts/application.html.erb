@@ -17,20 +17,22 @@
     <div class="site-wrapper">
       <div class="site-wrapper-inner">
         <div class="cover-container">
-          
-           <%= video_tag(
-              'Clouds_Fly_By.mp4',
+
+          <%= video_tag(
+              'Clouds_Flying_By.mp4',
               id: 'background',
               autoplay: true,
               loop: true,
               muted: true,
-              poster: 'Clouds_Fly_By.png'
+              poster: 'Clouds_Flying_By.png'
             )
             %>
 
           <%= render "shared/application_nav" %>
 
           <%= yield %>
+
+          <%= render "shared/application_footer" %>
 
           <%= source_helper("application") %>
 
