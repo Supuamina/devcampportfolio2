@@ -19,12 +19,12 @@
         <div class="cover-container">
 
           <%= video_tag(
-              'Clouds_Flying_By.mp4',
+              'Clouds_Fly_By.mp4',
               id: 'background',
               autoplay: true,
               loop: true,
               muted: true,
-              poster: 'Clouds_Flying_By.png'
+              poster: 'Clouds_Fly_By.png'
             )
             %>
 
@@ -33,6 +33,8 @@
           <%= yield %>
 
           <%= render "shared/application_footer" %>
+
+          <%= alerts %>
 
           <%= source_helper("application") %>
 
