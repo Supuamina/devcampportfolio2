@@ -200,7 +200,7 @@ body {
   z-index: -100;
   -webkit-transform: translateX(-50%) translateY(-50%);
   transform: translateX(-50%) translateY(-50%);
-  background: image-url('Cloud_Fly_By.jpg') no-repeat;
+  background: image-url('home_bg.png') no-repeat;
   background-size: cover;
 }
 
@@ -221,4 +221,19 @@ body {
   color: green;
 }
 
+.app-card-container {
+  color: black;
+  text-align: left;
+}
 
+.app-card-container > .card {
+  padding: 40px;
+}
+
+.profile-img {
+  border: 1px solid grey;
+}
+
+.app-card-container a {
+  color: blue;
+}
